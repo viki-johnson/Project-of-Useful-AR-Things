@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.ARFoundation;
 using UnityEngine.XR.ARSubsystems;
+using UnityEngine.UI;
 
 /// <summary>
 /// Listens for touch events and performs an AR raycast from the screen touch point.
@@ -33,6 +34,7 @@ public class PlaceOnPlane : MonoBehaviour
 
     public Material planeMat;
     public Color transparent;
+    [Tooltip("Tick if placing a window, poster etc")] public bool placingOnWall;
 
     void Awake()
     {
@@ -75,9 +77,13 @@ public class PlaceOnPlane : MonoBehaviour
             if (spawnedObject == null)
             {
                 spawnedObject = Instantiate(m_PlacedPrefab, hitPose.position, hitPose.rotation);
-                Debug.Log("debugging spawn box");
+                if(placingOnWall)
+                {
+                    spawnedObject.transform.eulerAngles = new Vector3(270, spawnedObject.transform.eulerAngles.y, spawnedObject.transform.eulerAngles.z);
+                }
                 planeMat.SetColor("_TexTintColor", transparent);
             }
+            
             // else
             // {
             //     spawnedObject.transform.position = hitPose.position;
