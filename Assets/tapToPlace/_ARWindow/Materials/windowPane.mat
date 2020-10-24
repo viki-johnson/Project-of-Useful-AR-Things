@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: WindowPane
+  m_Name: windowPane
   m_Shader: {fileID: 4800000, guid: 5bf1816cfeb644af98693e3a6dd03cb5, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4

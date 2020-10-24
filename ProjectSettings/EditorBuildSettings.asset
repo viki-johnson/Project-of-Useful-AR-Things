@@ -9,6 +9,6 @@ EditorBuildSettings:
     path: Assets/Music Viz/musicVizScene.unity
     guid: 8293959a518234dfd96e9da4ed98b800
   - enabled: 1
-    path: Assets/tapToPlace/ARWindow/ARWindow.unity
+    path: Assets/tapToPlace/_ARWindow/ARWindow.unity
     guid: b24cc4d1af900472ea07cd2ff7bc36c4
   m_configObjects: {}

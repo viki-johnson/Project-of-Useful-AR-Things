@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: fadeWindow
+  m_Name: viewfade
   m_Shader: {fileID: 4800000, guid: d4f010deaf1254228b31fb43a0bd91e7, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -40,11 +40,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _FadeTex:
-        m_Texture: {fileID: 2800000, guid: 5361b5e84526f437db03f860f7b0150c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 52a2262e863024e85b0adb3552e52788, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MagicTex:
-        m_Texture: {fileID: 2800000, guid: c235673aff8a1428db09871e0fb56b8c, type: 3}
+        m_Texture: {fileID: 2800000, guid: e4bc3694ec44240599f26b79fc5c8b78, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -77,11 +77,11 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _FadeBetween: 0.4994008
+    - _FadeBetween: -0.1
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _MagicSize: 0.1
+    - _MagicSize: 0.05
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
